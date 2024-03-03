@@ -12,7 +12,7 @@ public class TestDelete {
     @Test(description ="Тестирование запроса Delete с удалением пользователя")
     public void deleteUser(){
         int id;
-        id = given()
+        id = Integer.parseInt(given()
                 .spec(requestSpecification())
                 .body(new User("triniti","girl"))
                 .post(Metods.TestConfig.PathCreateUser.value)
@@ -21,7 +21,7 @@ public class TestDelete {
                 .extract()
                 .response()
                 .body()
-                .path("id");
+                .path("id"));
 
         given()
                 .spec(requestSpecification())
