@@ -34,10 +34,10 @@ public class TestGet {
                .then()
                .assertThat()
                .statusCode(HttpStatus.SC_OK)
-               .body("data[0].id", Matchers.is(2))
-               .body("data[1].email", Matchers.is("janet.weaver@reqres.in"))
-               .body("data[2].first_name", Matchers.is("Janet"))
-               .body("data[3].last_name", Matchers.is("Weaver"))
+               .body("data.id", Matchers.is(2))
+               .body("data.email", Matchers.is("janet.weaver@reqres.in"))
+               .body("data.first_name", Matchers.is("Janet"))
+               .body("data.last_name", Matchers.is("Weaver"))
                .log().all();
     }
 }
