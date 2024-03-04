@@ -2,6 +2,7 @@ package ReqresApi.get;
 
 import InputData.Metods;
 import InputData.User;
+import io.restassured.mapper.ObjectMapperType;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;
 

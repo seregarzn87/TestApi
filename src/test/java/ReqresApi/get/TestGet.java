@@ -5,12 +5,11 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import org.apache.http.HttpStatus;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
+
 import java.io.File;
-import java.net.http.HttpClient;
 
 import static InputData.Specification.requestSpecification;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 
 public class TestGet {
 
